@@ -28,4 +28,6 @@
     <!-- Exceptions-->
         <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 
+    <!-- User Dao -->
+    <bean id="userDAO" class="com.app.mytw.dao.UserDaoImpl"/>
 </beans>
