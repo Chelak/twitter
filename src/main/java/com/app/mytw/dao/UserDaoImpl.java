@@ -5,6 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by user on 8/8/2015.
@@ -33,14 +34,17 @@ public class UserDaoImpl implements UserDAO
         currentSession().save(user);
     }
 
+
     public User getUserById(Integer id) {
        return (User) currentSession().get(User.class, id);
     }
+
 
     public void editUser(User user)
     {
         currentSession().update(user);
     }
+
 
     public void deleteUser(Integer id)
     {
