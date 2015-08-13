@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
         userDAO.addUser(user);
     }
 
-    @Transactional(propagation=Propagation.REQUIRED, readOnly=false)
+    @Transactional
     public User getUserById(Integer id)
     {
         return userDAO.getUserById(id);
