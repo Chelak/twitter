@@ -11,7 +11,7 @@
         <load-on-startup>1</load-on-startup>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/resources/springcontext.xml</param-value>
+            <param-value>/resources/spring/springcontext.xml</param-value>
         </init-param>
     </servlet>
 
