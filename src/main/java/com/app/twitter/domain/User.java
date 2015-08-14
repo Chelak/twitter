@@ -1,4 +1,4 @@
-package com.app.mytw.domain;
+package com.app.twitter.domain;
 import javax.persistence.*;
 /**
  * Created by user on 8/8/2015.

@@ -1,16 +1,15 @@
-package com.app.mytw.dao;
+package com.app.twitter.dao;
 
-import com.app.mytw.domain.User;
+import com.app.twitter.domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by user on 8/8/2015.
  */
-@Repository
+//@Repository
 public class UserDaoImpl implements UserDAO
 {
 
@@ -18,7 +17,7 @@ public class UserDaoImpl implements UserDAO
 
 
 
-    @Autowired
+    //@Autowired
     public UserDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }

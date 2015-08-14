@@ -1,7 +1,7 @@
-package com.app.mytw.service;
+package com.app.twitter.service;
 
-import com.app.mytw.dao.UserDAO;
-import com.app.mytw.domain.User;
+import com.app.twitter.dao.UserDAO;
+import com.app.twitter.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -10,12 +10,12 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Created by user on 8/8/2015.
  */
-@Service
-@Transactional(propagation= Propagation.SUPPORTS, readOnly=true)
+//@Service
+//@Transactional(propagation= Propagation.SUPPORTS, readOnly=true)
 public class UserServiceImpl implements UserService {
 
 
-    @Autowired
+   //@Autowired
     private UserDAO userDAO;
     @Transactional(propagation=Propagation.REQUIRED, readOnly=false)
     public void addUser(User user)

@@ -1,11 +1,11 @@
-package com.app.mytw.service;
+package com.app.twitter.dao;
 
-import com.app.mytw.domain.User;
+import com.app.twitter.domain.User;
 
 /**
  * Created by user on 8/8/2015.
  */
-public interface UserService
+public interface UserDAO
 {
     public void addUser(User user);
     public User getUserById(Integer id);
